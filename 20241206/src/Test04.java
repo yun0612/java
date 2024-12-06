@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Test04 {
 	public static void main(String args[]) {
 		/* 배열 array */
@@ -19,5 +21,32 @@ public class Test04 {
 		for (int i=0; i<arr2.length; i++) {
 			System.out.println(i + "번째 요소: " + arr2[i]);
 		}
+		
+		/* 2차원 배열 */
+		int[][] test1 = new int[2][2];
+		int[][] test2 = {
+				{1, 1, 3},
+				{2, 2, 4}, 
+				{3, 5}
+		};
+		
+		// 2차원 배열에서 그냥 배열명.length는 [1][2] 중 1의 길이 반환
+		// 배열명[n].length는 [1][2] 중 2의 길이 반환
+		System.out.println(test2.length);
+		System.out.println(test2[0].length);
+		System.out.println(test2[2].length);
+		
+		// 2차원 배열은 인덱싱으로 직접 값 출력 불가
+		// 방법 1. 이중 for문 활용, 1차원 배열로 변환
+		for (int i=0; i<test2.length; i++) {
+			int[] temp = test2[i];
+			for (int j=0; j<temp.length; j++) {
+				System.out.print(temp[j] + " ");
+			}
+			System.out.println();
+		}
+		
+		// 방법 2. Arrays.deepToString(arr) 활용 (import java.util.Arrays)
+		System.out.println(Arrays.deepToString(test2));
 	}
 }
