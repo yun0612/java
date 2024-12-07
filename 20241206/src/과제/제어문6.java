@@ -1,6 +1,6 @@
 package 과제;
 
-public class 과제6 {
+public class 제어문6 {
 
 	public static void main(String[] args) {
 		/*배열의 총점과 평균 구하기*/
