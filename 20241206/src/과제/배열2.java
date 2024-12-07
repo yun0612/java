@@ -1,6 +1,6 @@
 package 과제;
 
-public class 제어문7 {
+public class 배열2 {
 
 	public static void main(String[] args) {
 		/* 배열의 최대값과 최소값 */

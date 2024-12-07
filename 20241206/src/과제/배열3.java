@@ -1,6 +1,6 @@
 package 과제;
 
-public class 제어문8 {
+public class 배열3 {
 
 	public static void main(String[] args) {
 		/* 배열을 오름차순으로 정렬 */
