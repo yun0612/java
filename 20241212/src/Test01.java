@@ -30,7 +30,7 @@ public class Test01 {
 		}
 		
 		System.out.println("max = " + max);
-	}
+	}  
 
 	public static void main(String[] args) { 
 		max(10, 20);
